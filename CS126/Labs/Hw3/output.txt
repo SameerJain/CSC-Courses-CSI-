@@ -1,0 +1,8 @@
+Name: john	score1: 85 score2: 86
+Name: mary	score1: 88 score2: 88
+Name: jake	score1: 99 score2: 90
+Name: jill	score1: 98 score2: 91
+Name: peter	score1: 89 score2: 92
+Name: alice	score1: 75 score2: 80
+Name: susan	score1: 97 score2: 100
+63 68

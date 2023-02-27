@@ -1,0 +1,826 @@
+Current Size: 50000
+
+=======BUBBLE SORT:============
+Time
+CPU Time: 11351551
+CPU Time: 11630191
+CPU Time: 12510638
+CPU Time: 10691565
+CPU Time: 10790302
+CPU Time: 10738347
+CPU Time: 10507358
+CPU Time: 10533329
+CPU Time: 10406246
+CPU Time: 10393477
+CPU Time: 10605969
+CPU Time: 10528083
+CPU Time: 10434415
+CPU Time: 10682862
+CPU Time: 10500970
+CPU Time: 10413551
+CPU Time: 10908599
+CPU Time: 15699134
+CPU Time: 11449992
+CPU Time: 10546967
+CPU Time: 10409192
+CPU Time: 10536051
+CPU Time: 11017242
+CPU Time: 10541904
+CPU Time: 14386800
+CPU Time: 14239466
+CPU Time: 12121214
+CPU Time: 13151330
+CPU Time: 13998821
+CPU Time: 15132052
+CPU Time: 15132394
+CPU Time: 16647818
+CPU Time: 16082915
+CPU Time: 13325877
+CPU Time: 12323408
+CPU Time: 11940511
+CPU Time: 11569833
+CPU Time: 11016329
+CPU Time: 11423175
+CPU Time: 12430311
+CPU Time: 11731027
+CPU Time: 13867791
+CPU Time: 12546090
+CPU Time: 12264134
+CPU Time: 12616039
+CPU Time: 10663986
+CPU Time: 10272376
+CPU Time: 11169893
+CPU Time: 11327649
+CPU Time: 10884764
+Steps
+bubbleSortAS steps:6870905461
+bubbleSortAS steps:6877267108
+bubbleSortAS steps:6866375263
+bubbleSortAS steps:6884812213
+bubbleSortAS steps:6874253491
+bubbleSortAS steps:6875864695
+bubbleSortAS steps:6870118141
+bubbleSortAS steps:6869585752
+bubbleSortAS steps:6881693086
+bubbleSortAS steps:6869404258
+bubbleSortAS steps:6867014785
+bubbleSortAS steps:6879197698
+bubbleSortAS steps:6878548765
+bubbleSortAS steps:6880232803
+bubbleSortAS steps:6875357959
+bubbleSortAS steps:6883301209
+bubbleSortAS steps:6875645590
+bubbleSortAS steps:6874776622
+bubbleSortAS steps:6874343311
+bubbleSortAS steps:6872250244
+bubbleSortAS steps:6878068375
+bubbleSortAS steps:6874896382
+bubbleSortAS steps:6875953393
+bubbleSortAS steps:6878676289
+bubbleSortAS steps:6877003579
+bubbleSortAS steps:6880600573
+bubbleSortAS steps:6876155464
+bubbleSortAS steps:6875561011
+bubbleSortAS steps:6890834992
+bubbleSortAS steps:6879776275
+bubbleSortAS steps:6871618432
+bubbleSortAS steps:6873489082
+bubbleSortAS steps:6873451816
+bubbleSortAS steps:6869896291
+bubbleSortAS steps:6882601501
+bubbleSortAS steps:6872300119
+bubbleSortAS steps:6877609051
+bubbleSortAS steps:6867695680
+bubbleSortAS steps:6882554305
+bubbleSortAS steps:6880972633
+bubbleSortAS steps:6873455929
+bubbleSortAS steps:6862986553
+bubbleSortAS steps:6873458698
+bubbleSortAS steps:6872233819
+bubbleSortAS steps:6874098946
+bubbleSortAS steps:6875144137
+bubbleSortAS steps:6876156889
+bubbleSortAS steps:6881138725
+bubbleSortAS steps:6872744584
+bubbleSortAS steps:6874912756
+=======INSERTION SORT:============
+Time
+CPU Time: 1780403
+CPU Time: 1745709
+CPU Time: 1842420
+CPU Time: 2212944
+CPU Time: 1762966
+CPU Time: 1879535
+CPU Time: 1879506
+CPU Time: 1965979
+CPU Time: 1913569
+CPU Time: 2153426
+CPU Time: 1775133
+CPU Time: 1930562
+CPU Time: 2110728
+CPU Time: 2344589
+CPU Time: 2017081
+CPU Time: 2883911
+CPU Time: 3332411
+CPU Time: 1723969
+CPU Time: 1626048
+CPU Time: 1569729
+CPU Time: 1567584
+CPU Time: 1558329
+CPU Time: 1629526
+CPU Time: 1674944
+CPU Time: 1626826
+CPU Time: 1965225
+CPU Time: 1647704
+CPU Time: 1756701
+CPU Time: 1788515
+CPU Time: 1673158
+CPU Time: 1562282
+CPU Time: 1679854
+CPU Time: 1597429
+CPU Time: 1560690
+CPU Time: 1571412
+CPU Time: 1840056
+CPU Time: 1896229
+CPU Time: 2014010
+CPU Time: 1649530
+CPU Time: 1905271
+CPU Time: 1754180
+CPU Time: 1698527
+CPU Time: 1634288
+CPU Time: 1683154
+CPU Time: 1607754
+CPU Time: 1910234
+CPU Time: 1606686
+CPU Time: 1603215
+CPU Time: 1605640
+CPU Time: 1683981
+Steps
+insertionSortAS steps:320458
+insertionSortAS steps:150013
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150018
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150013
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150013
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+insertionSortAS steps:150008
+=======SELECTION SORT:============
+Time
+CPU Time: 2834148
+CPU Time: 2827258
+CPU Time: 2863795
+CPU Time: 2899070
+CPU Time: 2856147
+CPU Time: 2862018
+CPU Time: 3007779
+CPU Time: 3350700
+CPU Time: 3053698
+CPU Time: 3243330
+CPU Time: 3603887
+CPU Time: 4017201
+CPU Time: 2831317
+CPU Time: 2814792
+CPU Time: 2828909
+CPU Time: 2937281
+CPU Time: 2810071
+CPU Time: 2837201
+CPU Time: 2877334
+CPU Time: 2811879
+CPU Time: 2854430
+CPU Time: 2808708
+CPU Time: 2840023
+CPU Time: 2803623
+CPU Time: 3009727
+CPU Time: 3411127
+CPU Time: 3227602
+CPU Time: 3251046
+CPU Time: 3226247
+CPU Time: 3276146
+CPU Time: 3237096
+CPU Time: 2912614
+CPU Time: 3251969
+CPU Time: 2981646
+CPU Time: 2902704
+CPU Time: 2944149
+CPU Time: 2958411
+CPU Time: 3125814
+CPU Time: 3205147
+CPU Time: 3139482
+CPU Time: 3236726
+CPU Time: 3025195
+CPU Time: 3042569
+CPU Time: 3007955
+CPU Time: 2896161
+CPU Time: 2974522
+CPU Time: 3245775
+CPU Time: 3143375
+CPU Time: 3048154
+CPU Time: 3120233
+Steps
+selectionSortAS steps:3750921695
+selectionSortAS steps:3750928340
+selectionSortAS steps:3750921450
+selectionSortAS steps:3750931863
+selectionSortAS steps:3750929669
+selectionSortAS steps:3750927641
+selectionSortAS steps:3750922894
+selectionSortAS steps:3750922540
+selectionSortAS steps:3750928373
+selectionSortAS steps:3750927564
+selectionSortAS steps:3750926933
+selectionSortAS steps:3750924222
+selectionSortAS steps:3750925851
+selectionSortAS steps:3750926447
+selectionSortAS steps:3750924587
+selectionSortAS steps:3750925029
+selectionSortAS steps:3750930177
+selectionSortAS steps:3750931869
+selectionSortAS steps:3750927898
+selectionSortAS steps:3750928506
+selectionSortAS steps:3750927106
+selectionSortAS steps:3750925994
+selectionSortAS steps:3750926007
+selectionSortAS steps:3750925143
+selectionSortAS steps:3750924575
+selectionSortAS steps:3750925456
+selectionSortAS steps:3750928730
+selectionSortAS steps:3750928496
+selectionSortAS steps:3750927750
+selectionSortAS steps:3750927344
+selectionSortAS steps:3750928512
+selectionSortAS steps:3750927421
+selectionSortAS steps:3750927347
+selectionSortAS steps:3750925889
+selectionSortAS steps:3750931835
+selectionSortAS steps:3750926961
+selectionSortAS steps:3750924980
+selectionSortAS steps:3750921799
+selectionSortAS steps:3750927607
+selectionSortAS steps:3750927065
+selectionSortAS steps:3750927230
+selectionSortAS steps:3750929179
+selectionSortAS steps:3750925771
+selectionSortAS steps:3750923842
+selectionSortAS steps:3750924593
+selectionSortAS steps:3750923473
+selectionSortAS steps:3750923891
+selectionSortAS steps:3750927089
+selectionSortAS steps:3750930711
+selectionSortAS steps:3750927882
+=======HEAP SORT:============
+Time
+CPU Time: 15711
+CPU Time: 15631
+CPU Time: 15601
+CPU Time: 15684
+CPU Time: 16197
+CPU Time: 16777
+CPU Time: 19179
+CPU Time: 21321
+CPU Time: 19238
+CPU Time: 19115
+CPU Time: 19079
+CPU Time: 19508
+CPU Time: 27575
+CPU Time: 35694
+CPU Time: 44511
+CPU Time: 43749
+CPU Time: 47421
+CPU Time: 26883
+CPU Time: 19268
+CPU Time: 19132
+CPU Time: 19146
+CPU Time: 19118
+CPU Time: 15963
+CPU Time: 16182
+CPU Time: 16193
+CPU Time: 16072
+CPU Time: 16229
+CPU Time: 18854
+CPU Time: 17841
+CPU Time: 18000
+CPU Time: 18332
+CPU Time: 17851
+CPU Time: 20105
+CPU Time: 17839
+CPU Time: 15759
+CPU Time: 15879
+CPU Time: 17358
+CPU Time: 17399
+CPU Time: 17210
+CPU Time: 17140
+CPU Time: 18517
+CPU Time: 25876
+CPU Time: 20909
+CPU Time: 18296
+CPU Time: 16249
+CPU Time: 15728
+CPU Time: 15576
+CPU Time: 15629
+CPU Time: 15605
+CPU Time: 15629
+Steps
+heapSortAS steps:14541353
+heapSortAS steps:14542086
+heapSortAS steps:14543818
+heapSortAS steps:14541764
+heapSortAS steps:14546562
+heapSortAS steps:14546985
+heapSortAS steps:14543483
+heapSortAS steps:14545192
+heapSortAS steps:14540929
+heapSortAS steps:14538745
+heapSortAS steps:14542829
+heapSortAS steps:14539461
+heapSortAS steps:14543243
+heapSortAS steps:14544588
+heapSortAS steps:14544710
+heapSortAS steps:14543453
+heapSortAS steps:14543929
+heapSortAS steps:14543911
+heapSortAS steps:14539575
+heapSortAS steps:14541232
+heapSortAS steps:14541367
+heapSortAS steps:14548088
+heapSortAS steps:14541440
+heapSortAS steps:14533768
+heapSortAS steps:14554799
+heapSortAS steps:14540604
+heapSortAS steps:14542819
+heapSortAS steps:14547184
+heapSortAS steps:14543260
+heapSortAS steps:14545596
+heapSortAS steps:14540987
+heapSortAS steps:14541197
+heapSortAS steps:14541985
+heapSortAS steps:14540758
+heapSortAS steps:14546920
+heapSortAS steps:14541214
+heapSortAS steps:14542694
+heapSortAS steps:14541464
+heapSortAS steps:14547694
+heapSortAS steps:14543731
+heapSortAS steps:14538816
+heapSortAS steps:14542487
+heapSortAS steps:14541731
+heapSortAS steps:14549655
+heapSortAS steps:14546717
+heapSortAS steps:14546535
+heapSortAS steps:14542383
+heapSortAS steps:14542676
+heapSortAS steps:14544302
+heapSortAS steps:14543355
+=======MERGE SORT:============
+Time
+CPU Time: 48507
+CPU Time: 42660
+CPU Time: 43422
+CPU Time: 43278
+CPU Time: 51004
+CPU Time: 43950
+CPU Time: 41148
+CPU Time: 40885
+CPU Time: 40936
+CPU Time: 40626
+CPU Time: 41340
+CPU Time: 42120
+CPU Time: 40856
+CPU Time: 44871
+CPU Time: 41202
+CPU Time: 42200
+CPU Time: 40627
+CPU Time: 42593
+CPU Time: 30837
+CPU Time: 30476
+CPU Time: 30376
+CPU Time: 22800
+CPU Time: 18661
+CPU Time: 18825
+CPU Time: 18890
+CPU Time: 18877
+CPU Time: 21854
+CPU Time: 25285
+CPU Time: 19893
+CPU Time: 19969
+CPU Time: 16685
+CPU Time: 15855
+CPU Time: 17265
+CPU Time: 16153
+CPU Time: 16274
+CPU Time: 16245
+CPU Time: 16300
+CPU Time: 16257
+CPU Time: 16195
+CPU Time: 19370
+CPU Time: 16635
+CPU Time: 18233
+CPU Time: 18103
+CPU Time: 17962
+CPU Time: 17900
+CPU Time: 17909
+CPU Time: 17956
+CPU Time: 18729
+CPU Time: 18342
+CPU Time: 18177
+Steps
+steps: 7428781
+steps: 7428621
+steps: 7428550
+steps: 7428673
+steps: 7428774
+steps: 7428658
+steps: 7428407
+steps: 7428462
+steps: 7428750
+steps: 7428435
+steps: 7428558
+steps: 7428670
+steps: 7428845
+steps: 7428877
+steps: 7428798
+steps: 7428755
+steps: 7428462
+steps: 7428566
+steps: 7428380
+steps: 7428601
+steps: 7429034
+steps: 7428687
+steps: 7428520
+steps: 7428811
+steps: 7428691
+steps: 7428656
+steps: 7428722
+steps: 7428989
+steps: 7428856
+steps: 7428516
+steps: 7428472
+steps: 7428509
+steps: 7428853
+steps: 7428466
+steps: 7428437
+steps: 7428739
+steps: 7428551
+steps: 7428566
+steps: 7428830
+steps: 7428434
+steps: 7428722
+steps: 7428557
+steps: 7428433
+steps: 7428900
+steps: 7428432
+steps: 7428733
+steps: 7428726
+steps: 7428494
+steps: 7428665
+steps: 7428828
+=======MERGE INSERTION SORT:============
+Time
+CPU Time: 24792
+CPU Time: 24646
+CPU Time: 24597
+CPU Time: 24497
+CPU Time: 24776
+CPU Time: 25717
+CPU Time: 29965
+CPU Time: 29143
+CPU Time: 28848
+CPU Time: 30198
+CPU Time: 28848
+CPU Time: 28440
+CPU Time: 30297
+CPU Time: 31012
+CPU Time: 19767
+CPU Time: 32316
+CPU Time: 22928
+CPU Time: 29705
+CPU Time: 24962
+CPU Time: 19657
+CPU Time: 19989
+CPU Time: 20782
+CPU Time: 19563
+CPU Time: 19639
+CPU Time: 19734
+CPU Time: 20596
+CPU Time: 20003
+CPU Time: 19671
+CPU Time: 19861
+CPU Time: 20102
+CPU Time: 19663
+CPU Time: 19484
+CPU Time: 19861
+CPU Time: 19578
+CPU Time: 19957
+CPU Time: 19656
+CPU Time: 21762
+CPU Time: 19536
+CPU Time: 19685
+CPU Time: 19650
+CPU Time: 19778
+CPU Time: 19866
+CPU Time: 20361
+CPU Time: 19621
+CPU Time: 19704
+CPU Time: 19582
+CPU Time: 19654
+CPU Time: 19745
+CPU Time: 19575
+CPU Time: 19723
+Steps
+steps: 32280984
+steps: 32371314
+steps: 32262663
+steps: 32243658
+steps: 32392021
+steps: 32500118
+steps: 32333289
+steps: 32268527
+steps: 32257139
+steps: 32540221
+steps: 32372459
+steps: 32166315
+steps: 32447113
+steps: 32337193
+steps: 32376925
+steps: 32431495
+steps: 32239227
+steps: 32364194
+steps: 32341949
+steps: 32532692
+steps: 32255875
+steps: 32375270
+steps: 32486407
+steps: 32404691
+steps: 32379423
+steps: 32255608
+steps: 32437492
+steps: 32337451
+steps: 32338009
+steps: 32154611
+steps: 32479429
+steps: 32351552
+steps: 32362172
+steps: 32431058
+steps: 32322112
+steps: 32479258
+steps: 32360870
+steps: 32238625
+steps: 32254344
+steps: 32370784
+steps: 32373626
+steps: 32459251
+steps: 32495288
+steps: 32566634
+steps: 32211730
+steps: 32388952
+steps: 32409800
+steps: 32427502
+steps: 32384936
+steps: 32414734
+=======QUICK SORT HOARSE:============
+Time
+CPU Time: 18324
+CPU Time: 18128
+CPU Time: 18265
+CPU Time: 18193
+CPU Time: 18530
+CPU Time: 18113
+CPU Time: 18335
+CPU Time: 18075
+CPU Time: 18317
+CPU Time: 18478
+CPU Time: 17976
+CPU Time: 18210
+CPU Time: 18366
+CPU Time: 18537
+CPU Time: 18323
+CPU Time: 18483
+CPU Time: 19260
+CPU Time: 18144
+CPU Time: 18147
+CPU Time: 18241
+CPU Time: 18341
+CPU Time: 18423
+CPU Time: 18390
+CPU Time: 18153
+CPU Time: 18198
+CPU Time: 19371
+CPU Time: 18205
+CPU Time: 18370
+CPU Time: 18186
+CPU Time: 18491
+CPU Time: 18205
+CPU Time: 18157
+CPU Time: 18220
+CPU Time: 18314
+CPU Time: 18409
+CPU Time: 18451
+CPU Time: 18166
+CPU Time: 18450
+CPU Time: 18141
+CPU Time: 18814
+CPU Time: 18063
+CPU Time: 18238
+CPU Time: 18297
+CPU Time: 18243
+CPU Time: 18407
+CPU Time: 19507
+CPU Time: 18174
+CPU Time: 18206
+CPU Time: 23057
+CPU Time: 25436
+Steps
+steps: 4736828
+steps: 4728605
+steps: 4747029
+steps: 4690253
+steps: 4804852
+steps: 4763071
+steps: 4842264
+steps: 4847124
+steps: 4882932
+steps: 4994165
+steps: 4739581
+steps: 4688609
+steps: 4788222
+steps: 4804881
+steps: 4811749
+steps: 4843198
+steps: 4779945
+steps: 4737233
+steps: 4710595
+steps: 4751143
+steps: 4753054
+steps: 4756559
+steps: 4918595
+steps: 4813931
+steps: 4831318
+steps: 4761847
+steps: 4772275
+steps: 4741798
+steps: 4854201
+steps: 4726258
+steps: 5017621
+steps: 4737699
+steps: 4812196
+steps: 4662730
+steps: 4925383
+steps: 4795772
+steps: 4670419
+steps: 4733242
+steps: 4804106
+steps: 4883377
+steps: 4728868
+steps: 4630908
+steps: 4762214
+steps: 4803836
+steps: 4705851
+steps: 4920376
+steps: 4896768
+steps: 4693636
+steps: 4725473
+steps: 4702713
+=======QUICK SORT LAMUTO:============
+Time
+CPU Time: 35312
+CPU Time: 59249
+CPU Time: 38706
+CPU Time: 36801
+CPU Time: 13735
+CPU Time: 12660
+CPU Time: 16265
+CPU Time: 13206
+CPU Time: 13455
+CPU Time: 11553
+CPU Time: 14156
+CPU Time: 11821
+CPU Time: 11653
+CPU Time: 11802
+CPU Time: 11617
+CPU Time: 14603
+CPU Time: 11514
+CPU Time: 11469
+CPU Time: 12075
+CPU Time: 11671
+CPU Time: 11528
+CPU Time: 15227
+CPU Time: 11576
+CPU Time: 11482
+CPU Time: 12026
+CPU Time: 11930
+CPU Time: 11997
+CPU Time: 12417
+CPU Time: 14709
+CPU Time: 17423
+CPU Time: 18153
+CPU Time: 28166
+CPU Time: 35720
+CPU Time: 34607
+CPU Time: 34181
+CPU Time: 34241
+CPU Time: 34687
+CPU Time: 33912
+CPU Time: 34319
+CPU Time: 34052
+CPU Time: 36098
+CPU Time: 37428
+CPU Time: 35402
+CPU Time: 34285
+CPU Time: 34860
+CPU Time: 36592
+CPU Time: 35759
+CPU Time: 34475
+CPU Time: 38138
+CPU Time: 34582
+Steps
+steps: 6142458
+steps: 6660456
+steps: 6280277
+steps: 5986684
+steps: 6260426
+steps: 6166318
+steps: 6246463
+steps: 6098548
+steps: 6261382
+steps: 5926293
+steps: 6131664
+steps: 6161015
+steps: 6116015
+steps: 6103356
+steps: 6047053
+steps: 6252171
+steps: 6344431
+steps: 6137558
+steps: 6000068
+steps: 6145420
+steps: 6741310
+steps: 6096118
+steps: 6237865
+steps: 5891203
+steps: 6201601
+steps: 6418183
+steps: 6516993
+steps: 6164504
+steps: 6062874
+steps: 6258800
+steps: 6559827
+steps: 5952379
+steps: 6264078
+steps: 6169026
+steps: 5960482
+steps: 6296476
+steps: 6328979
+steps: 6120963
+steps: 6629061
+steps: 6164902
+steps: 6129901
+steps: 5997947
+steps: 5927060
+steps: 6041388
+steps: 6252812
+steps: 6047028
+steps: 6297674
+steps: 6180683
+steps: 6101140
+steps: 6133938
