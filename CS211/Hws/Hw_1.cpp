@@ -76,7 +76,8 @@ int main () {
 int pairs[9]{10,20,20,10,10,30,50,10,20};
 
 sockMerchant(pairs,9);
-
+// sort the array
+//in a for loop, if arr[i] == arr[i+1], pairs++ and move i over 2 
 
     return 0;
 }

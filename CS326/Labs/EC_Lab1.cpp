@@ -114,7 +114,7 @@ int main()
 
 bool partition(int arr[], int n, int target) // Checks if there exists a subset of intergers that equal half the sum
 {
-\
+
     if (target == 0)
     { // if target has reached 0, then a subset was found
         return true;

@@ -32,7 +32,8 @@ int main()
     system("PAUSE");
     return 0;
 }
-factorial(int input)
+
+int factorial(int input)
 {
 
     int product = 1;

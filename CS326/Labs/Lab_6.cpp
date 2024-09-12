@@ -60,7 +60,7 @@ Finish Time:    0
 (Dequeue Operation)  Leaving: Bob
 (Dequeue Operation)  Queue is empty
 
-           Q3 CIRCULAR POINTER BASED QUEUE
+Q3 CIRCULAR POINTER BASED QUEUE
 
 
   Customers in Circular Linked List Queue:
