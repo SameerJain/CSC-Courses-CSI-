@@ -4,24 +4,20 @@
 #include <iostream>
 using namespace std;
 
-int sumfinder(int input)
-{
+int sumfinder(int input) {
+  int sum = 0;  // where both digits are added
 
-    int sum = 0; // where both digits are added
-
-    sum += input / 10; // tens digit
-    sum += input % 10; // ones digit
-    return sum;
+  sum += input / 10;  // tens digit
+  sum += input % 10;  // ones digit
+  return sum;
 }
 
-int main()
-{
+int main() {
+  int input;
 
-    int input;
+  cout << "Enter a two digit number:\n";
+  cin >> input;
+  cout << "Sum of both digits are: " << sumfinder(input);
 
-    cout << "Enter a two digit number:\n";
-    cin >> input;
-    cout << "Sum of both digits are: " << sumfinder(input);
-
-    return 0;
+  return 0;
 }

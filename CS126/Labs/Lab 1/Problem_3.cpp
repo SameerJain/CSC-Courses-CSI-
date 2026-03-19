@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
 // make a meters per yard converter
-int main()
-{
+int main() {
+  const float METERS_PER_YARD = 0.9144;
 
-    const float METERS_PER_YARD = 0.9144;
+  int yards, meters;
 
-    int yards, meters;
+  cout << "This is a unit converter from Meters to Yards!\n";
+  cout << "Enter your distance in yards:\n";
 
-    cout << "This is a unit converter from Meters to Yards!\n";
-    cout << "Enter your distance in yards:\n";
+  cin >> yards;
 
-    cin >> yards;
+  meters = yards * METERS_PER_YARD;
 
-    meters = yards * METERS_PER_YARD;
-
-    cout << yards << " Yards = " << meters << " Meters";
+  cout << yards << " Yards = " << meters << " Meters";
 }

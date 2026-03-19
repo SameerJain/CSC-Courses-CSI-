@@ -1,15 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int main () {
+int main() {
+  char c;
 
-char c;
+  cout << "Enter a letter to convert to ASCII (Case Sensitive): ";
+  cin >> c;
 
-cout << "Enter a letter to convert to ASCII (Case Sensitive): ";
-cin >> c ;
+  cout << static_cast<int>(c);
 
-cout << static_cast<int> (c);
-
-
-    return 0;
+  return 0;
 }

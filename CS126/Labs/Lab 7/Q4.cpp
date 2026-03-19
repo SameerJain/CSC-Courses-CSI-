@@ -2,34 +2,28 @@
 #include <iostream>
 using namespace std;
 
-void loop(int x)
-{
+void loop(int x) {
+  int k = 1;
 
-    int k = 1;
+  for (int i = 1; i <= x; i++) {
+    for (int j = 1; j <= i; j++)
 
-    for (int i = 1; i <= x; i++)
     {
-
-        for (int j = 1; j <= i; j++)
-
-        {
-            cout << k << " ";
-            k++; // actual numbers
-        }
-
-        cout << endl;
+      cout << k << " ";
+      k++;  // actual numbers
     }
+
+    cout << endl;
+  }
 }
 
-int main()
-{
+int main() {
+  int x;
 
-    int x;
+  cout << " Enter number of lines:";
+  cin >> x;
 
-    cout << " Enter number of lines:";
-    cin >> x;
+  loop(x);
 
-    loop(x);
-
-    return 0;
+  return 0;
 }

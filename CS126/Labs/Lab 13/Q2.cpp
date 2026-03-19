@@ -1,28 +1,26 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+  char word[20] = "Holidays!";
+  int x;
 
-    char word[20] = "Holidays!";
-    int x;
+  x = strlen(word);
 
-    x = strlen(word);
+  if (word[3] == 'i' || x == 18)
+    cout << "----\n";
 
-    if (word[3] == 'i' || x == 18)
-        cout << "----\n";
+  else
+    cout << 'X' << endl;
 
-    else
-        cout << 'X' << endl;
+  if (6 > 15 && 45 % 3 == 1 || 'Y' > 'a')
+    cout << "*****\n";
 
-    if (6 > 15 && 45 % 3 == 1 || 'Y' > 'a')
-        cout << "*****\n";
+  else
+    cout << '0' << endl;
 
-    else
-        cout << '0' << endl;
+  cout << word << ' ' << x << endl;
 
-    cout << word << ' ' << x << endl;
-
-    return 0;
+  return 0;
 }

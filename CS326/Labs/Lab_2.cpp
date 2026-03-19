@@ -86,185 +86,149 @@ Move disk 1 from rod B to rod A  mid:C
 Move disk 2 from rod B to rod C  mid:A
 Move disk 1 from rod A to rod C  mid:
 */
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
-// Global Variables 
+// Global Variables
 int length{};
-int* arr{new int[length]{} };
+int* arr{new int[length]{}};
 
 // Q1 Compute the exponent of a number
 
 int exponent(int x, int n) {
+  int y;
 
-    int y;
+  if (n == 0) {
+    cout << "Base case. N= " << n << endl;
 
+    return 1;
+  }
 
-	if(n == 0){
+  y = exponent(x, n / 2);
 
-        cout << "Base case. N= " << n <<  endl;
+  if (n > 0) {
+    if (n % 2 == 0) {
+      cout << "Recursive Call. N= " << n << endl;
 
-		return 1;
+      return y * y;
 
-	}
+    }
 
-    y = exponent(x,n/2);
+    else {
+      cout << "Recursive Call. N= " << n << endl;
 
-    if( n > 0 ) {
+      return x * y * y;
+    }
+  }
 
-		if (n % 2 == 0) {
+  cout << "Number of multiplications = " << n << endl;
 
-            cout << "Recursive Call. N= " << n << endl;
-
-			return  y * y ;
-
-		}
-
-		else {
-
-            cout << "Recursive Call. N= " << n << endl;
-
-            return x * y * y ;
-
-        }
-
-	}
-    
-    cout << "Number of multiplications = " << n << endl;
-
-    
-    return n; 
-    
+  return n;
 }
 
 // Q2 Resursive Insertion Sort
 
-void sort (int arr[], int z) {
-
-if ( z <= 1) {
-
+void sort(int arr[], int z) {
+  if (z <= 1) {
     return;
-}
+  }
 
-// Recursive Call
+  // Recursive Call
 
-sort( arr, z - 1);
+  sort(arr, z - 1);
 
-int key = arr[z -1]; 
+  int key = arr[z - 1];
 
-int j = z - 2;
+  int j = z - 2;
 
-while (j >= 0 && arr[j] > key) {
-
-    arr[j+1] = arr[j];
+  while (j >= 0 && arr[j] > key) {
+    arr[j + 1] = arr[j];
 
     j--;
+  }
 
+  arr[j + 1] = key;
 }
 
-arr[j + 1] = key;
+// Q3
 
+void towers(int n, char start, char end, char mid) {
+  if (n == 0) {
+    return;
+  }
+
+  towers(n - 1, start, mid, end);
+
+  cout << "Move disk " << n << " from rod " << start << " to rod " << end
+       << "  mid:" << mid << endl;
+
+  towers(n - 1, mid, end, start);
 }
 
-//Q3 
+int main() {
+  double x;
+  double n;
+  int counter;
 
-void towers(int n, char start, char end, char mid)
-{
+  // Q1
 
-    if (n == 0) {
-        return;
+  cout << "Question 1: " << endl;
+
+  cout << "Enter number of calculations: ";
+  cin >> counter;
+
+  while (counter > 0) {
+    cout << "Enter base and then exponent: ";
+
+    cin >> x >> n;
+
+    cout << "Function Call" << endl;
+
+    cout << exponent(x, n) << endl;
+
+    counter--;
+  }
+
+  // Q2
+
+  cout << endl << "Question 2: " << endl;
+
+  int length{};
+  int* arr{new int[length]{}};
+  int sortSum;
+
+  cout << "Enter number of Sorts: ";
+
+  cin >> counter;
+
+  while (counter > 0) {
+    cout << endl << "Enter array length: ";
+
+    cin >> length;
+
+    cout << "Enter the number of integers to sort: ";
+
+    cin >> sortSum;
+
+    for (int i = 0; i < length; i++) {
+      cin >> arr[i];
     }
 
-    towers(n - 1, start, mid , end);
+    sort(arr, sortSum);
 
-    cout << "Move disk " << n << " from rod " << start << " to rod " << end << "  mid:" << mid <<  endl;
+    for (int i = 0; i < length; i++) {
+      cout << arr[i] << " ";
+    }
 
-    towers(n - 1, mid, end , start );
+    counter--;
+  }
 
+  // Q3
 
-}
+  cout << endl << endl << "Towers of Hanoi: " << endl;
 
+  towers(3, 'A', 'C', 'B');
 
-
-int main () {
-
-double x;
-double n;
-int counter;
-
-
-//Q1
-
-
-cout << "Question 1: " << endl;
-
-cout << "Enter number of calculations: " ;
-cin  >> counter;
-
-while (counter > 0) {
-
-cout << "Enter base and then exponent: " ;
-
-cin >> x >> n ;
-
-cout << "Function Call" << endl;
-
-cout << exponent(x,n) << endl;
-
-counter--;
-
-}
-
-
-//Q2
-
-cout << endl << "Question 2: " << endl;
-
-int length{};
-int* arr{new int[length]{} };
-int sortSum;
-
-
-cout << "Enter number of Sorts: " ;
-
-cin >> counter;
-
-while(counter > 0) {
-
-cout << endl << "Enter array length: ";
-
-cin >> length;
-
-cout << "Enter the number of integers to sort: " ;
-
-cin >> sortSum;
-
-
-for(int i=0; i<length; i++) {
-    cin >> arr[i];
-}
-
-
-sort(arr, sortSum); 
-
-
-for(int i = 0; i < length; i++) {
-    cout << arr[i] << " ";
-}
-
-counter--;
-
-}
-
-
-//Q3
-
-    cout << endl << endl << "Towers of Hanoi: " << endl;
-
-    towers(3, 'A', 'C', 'B');
-
-
-    return 0;
-
+  return 0;
 }

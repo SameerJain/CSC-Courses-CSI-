@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-struct lineValues{
+struct lineValues {
+  int code;
+  int comment;
 
-    int code;
-    int comment;
-
-}Programmers[10];
+} Programmers[10];

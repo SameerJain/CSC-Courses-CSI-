@@ -1,41 +1,32 @@
 // random number game
+#include <stdlib.h>  // for randomizer
+
 #include <iostream>
-#include <stdlib.h> // for randomizer
 using namespace std;
 
-int main()
-{
+int main() {
+  srand(time(NULL));  // brings in srand
 
-    srand(time(NULL)); // brings in srand
+  int num = rand() % 100;
+  int guess;
+  cout << "I have selected a number from 1-100\n";
+  cout << "Guess what it is:\n";
 
-    int num = rand() % 100;
-    int guess;
-    cout << "I have selected a number from 1-100\n";
-    cout << "Guess what it is:\n";
+  while (guess != num) {
+    cin >> guess;
 
-    while (guess != num)
-    {
+    if (guess > num) {
+      cout << "Guess Lower\n";
+    }
 
-        cin >> guess;
+    else if (guess < num) {
+      cout << "Guess Higher\n";
+    }
 
-        if (guess > num)
-        {
+    else if (guess == num) {
+      cout << "Correct!\n";
+    }
 
-            cout << "Guess Lower\n";
-        }
-
-        else if (guess < num)
-        {
-
-            cout << "Guess Higher\n";
-        }
-
-        else if (guess == num)
-        {
-
-            cout << "Correct!\n";
-        }
-
-    } // for
-    return 0;
+  }  // for
+  return 0;
 }

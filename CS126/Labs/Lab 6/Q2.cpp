@@ -4,21 +4,16 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-
-    int count;
-    for (count = 270; count < 277; count++)
-    {
-
-        if (count == 275)
-        {
-            break;
-        }
-
-        cout << count << " Good Luck!" << endl;
+int main() {
+  int count;
+  for (count = 270; count < 277; count++) {
+    if (count == 275) {
+      break;
     }
 
-    cout << "The value of count is: " << count << endl;
-    return 0;
+    cout << count << " Good Luck!" << endl;
+  }
+
+  cout << "The value of count is: " << count << endl;
+  return 0;
 }

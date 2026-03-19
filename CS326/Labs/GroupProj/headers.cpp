@@ -45,7 +45,9 @@ void mergeA(int arr[], int start, int mid, int end);
 void mergeB(int arr[], int start, int mid, int end);
 void mergeSortA(int arr[], int start, int end);
 void mergeSortB(int arr[], int start, int end);
-void insertionSortAIns(int arr[], int start, int end); // Insertion Sort for merge-insertion algorithm
+void insertionSortAIns(
+    int arr[], int start,
+    int end);  // Insertion Sort for merge-insertion algorithm
 void insertionSortBIns(int arr[], int start, int end);
 void mergeInsertionSortA(int arr[], int start, int stop, int k);
 void mergeInsertionSortB(int arr[], int start, int stop, int k);
@@ -62,11 +64,11 @@ void mergeInsertionSortBS(int arr[], int start, int stop, int k);
 // ===========QUICK SORT===================
 
 // without steps
-int partitionHA(int arr[], int start, int end); // Hoarse
+int partitionHA(int arr[], int start, int end);  // Hoarse
 void quickSortHA(int arr[], int start, int end);
 int partitionHB(int arr[], int start, int end);
 void quickSortHB(int arr[], int start, int end);
-int partitionLA(int arr[], int start, int end); // Lamuto
+int partitionLA(int arr[], int start, int end);  // Lamuto
 void QuicksortLA(int arr[], int start, int end);
 int partitionLB(int arr[], int start, int end);
 void QuicksortLB(int arr[], int start, int end);
@@ -92,12 +94,16 @@ void selectionSortBS(int arr[], int n);
 
 //==========UTILITY FUNCTIONS=================
 
-int *newPermutArray(int n);
-int *newRandArray(int n);
+int* newPermutArray(int n);
+int* newRandArray(int n);
 void remakeArray(int arr[]);
 void printArray(int arr[], int n);
-void func_eval(int arr[], int n, void (*func)(int[], int));              // Runs function and returns runtime
-void func_eval2(int arr[], int n, int m, void (*func)(int[], int, int)); // for merge and quicksort
-void func_evalMergeIns(int arr[], int n, int m, int k, void (*func)(int[], int, int, int));
-void func_evalMergeInsSteps(int arr[], int n, int m, int k, void (*func)(int[], int, int, int));
+void func_eval(int arr[], int n,
+               void (*func)(int[], int));  // Runs function and returns runtime
+void func_eval2(int arr[], int n, int m,
+                void (*func)(int[], int, int));  // for merge and quicksort
+void func_evalMergeIns(int arr[], int n, int m, int k,
+                       void (*func)(int[], int, int, int));
+void func_evalMergeInsSteps(int arr[], int n, int m, int k,
+                            void (*func)(int[], int, int, int));
 void func_evalStepsMQ(int arr[], int n, int m, void (*func)(int[], int, int));

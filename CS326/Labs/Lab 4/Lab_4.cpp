@@ -41,433 +41,361 @@ Element 7 is found in position: 2
 #include <iostream>
 using namespace std;
 
-struct node
-{
+struct node {
+  int data;
 
-    int data;
-
-    struct node *next;
-
+  struct node* next;
 };
 
-class list
-{
+class list {
+ public:
+  bool SortedIsEmpty();  // Returns true if the list is empty
 
-public:
-    bool SortedIsEmpty(); // Returns true if the list is empty
+  int SortedGetLength();  // returns length of the list
 
-    int SortedGetLength(); // returns length of the list
+  bool SortedFind(int k, int& x);  // returns the value of the kth element
 
-    bool SortedFind(int k, int &x); // returns the value of the kth element
+  int SortedSearch(
+      int key);  // returns the position of the element which is the same as key
 
-    int SortedSearch(int key); // returns the position of the element which is the same as key
+  void SortedInsert1(int x);  // inserts x to the right postion of the sorted
+                              // linked list ALLOWING FOR DUPLICATE
 
-    void SortedInsert1(int x); // inserts x to the right postion of the sorted linked list ALLOWING FOR DUPLICATE
+  void SortedInsert2(int x);  // Inserts WITHOUT ALLOWING FOR DUPLICATE ELEMENT
 
-    void SortedInsert2(int x); // Inserts WITHOUT ALLOWING FOR DUPLICATE ELEMENT
+  void SortedDelete(int k, int& x, bool& success);  // deletes the kth element
 
-    void SortedDelete(int k, int &x, bool &success); // deletes the kth element
+  void PrintList();  // Prints out the entire linked list
 
-    void PrintList(); // Prints out the entire linked list
-
-    private:
-
-    node *head = 0;
-
+ private:
+  node* head = 0;
 };
 
+int main() {
+  // Linked List Implemented
 
+  list list1;
 
-int main()
-{
+  int y;
+  bool success;
 
-// Linked List Implemented
+  // Function Calls for part 1
 
-    list list1;
+  cout << "Function Calls for part 1\n\n";
 
-    int y;
-    bool success;   
-    
-// Function Calls for part 1
+  list1.PrintList();
 
-        cout << "Function Calls for part 1\n\n";
+  // a)Insert 5
+  list1.SortedInsert1(5);
+  // b)	Insert 7
+  list1.SortedInsert1(7);
+  // c)	Insert 9
+  list1.SortedInsert1(3);
+  // d)	Insert 11
+  list1.SortedInsert1(11);
+  // e)	Insert 5
+  list1.SortedInsert1(5);
+  // f)	Print out the list
+  list1.PrintList();
+  // g)	Insert 7
+  list1.SortedInsert1(11);
+  // h)	Print out the list
+  list1.PrintList();
+  // i)	Find the 3rd element
+  list1.SortedFind(3, y);
+  // j)	Search 7
+  list1.SortedSearch(7);
+  // k)	Print out the length of the list
+  cout << "Length of List: " << list1.SortedGetLength() << "\n";
+  // l)	Delete 7
+  list1.SortedDelete(2, y, success);
+  // m)	Print out the list
+  list1.PrintList();
+  // n)	Search 7
+  list1.SortedSearch(7);
+  list1.PrintList();
 
-        list1.PrintList();
+  // Resets list for Part 2
 
-        // a)Insert 5
-        list1.SortedInsert1(5);
-        // b)	Insert 7
-        list1.SortedInsert1(7);
-        // c)	Insert 9
-        list1.SortedInsert1(3);
-        // d)	Insert 11
-        list1.SortedInsert1(11);
-        // e)	Insert 5
-        list1.SortedInsert1(5);
-        // f)	Print out the list
-        list1.PrintList();
-        // g)	Insert 7
-        list1.SortedInsert1(11);
-        // h)	Print out the list
-        list1.PrintList();
-        // i)	Find the 3rd element
-        list1.SortedFind(3,y);
-        // j)	Search 7
-        list1.SortedSearch(7);
-        // k)	Print out the length of the list
-        cout << "Length of List: " << list1.SortedGetLength() << "\n";
-        // l)	Delete 7
-        list1.SortedDelete(2,y,success);
-        // m)	Print out the list
-        list1.PrintList();
-        // n)	Search 7
-        list1.SortedSearch(7);
-        list1.PrintList();
+  cout << "\nResets list for Part 2\n";
 
-// Resets list for Part 2
+  for (int p = 0; p < 5; p++) {
+    list1.SortedDelete(1, y, success);
+  }
 
-    cout << "\nResets list for Part 2\n";
+  cout << "\n\nFunction Calls for part 2:\n\n";
 
-    for(int p = 0; p < 5; p++) {
+  // Function Calls for part 2:
 
-        list1.SortedDelete(1,y,success);
-
-    }
-    
-
-    cout << "\n\nFunction Calls for part 2:\n\n";
-
-// Function Calls for part 2:
-
-    // a)Insert 5
-    list1.PrintList();
-    // a)Insert 5
-    list1.SortedInsert2(5);
-    // b)	Insert 7
-    list1.SortedInsert2(7);
-    // c)	Insert 9
-    list1.SortedInsert2(3);
-    // d)	Insert 11
-    list1.SortedInsert2(11);
-    // e)	Insert 5
-    list1.SortedInsert2(5);
-    // f)	Print out the list
-    list1.PrintList();
-    // g)	Insert 7
-    list1.SortedInsert2(11);
-    list1.SortedInsert2(20);
-    // h)	Print out the list
-    list1.PrintList();
-    // i)	Find the 3rd element
-    list1.SortedFind(3, y);
-    // j)	Search 7
-    list1.SortedSearch(7);
-    // k)	Print out the length of the list
-    cout << "Length of List: " << list1.SortedGetLength() << "\n";
-    // l)	Delete 7
-    list1.SortedDelete(2, y, success);
-    // m)	Print out the list
-    list1.PrintList();
-    // n)	Search 7
-    list1.SortedSearch(7);
-
+  // a)Insert 5
+  list1.PrintList();
+  // a)Insert 5
+  list1.SortedInsert2(5);
+  // b)	Insert 7
+  list1.SortedInsert2(7);
+  // c)	Insert 9
+  list1.SortedInsert2(3);
+  // d)	Insert 11
+  list1.SortedInsert2(11);
+  // e)	Insert 5
+  list1.SortedInsert2(5);
+  // f)	Print out the list
+  list1.PrintList();
+  // g)	Insert 7
+  list1.SortedInsert2(11);
+  list1.SortedInsert2(20);
+  // h)	Print out the list
+  list1.PrintList();
+  // i)	Find the 3rd element
+  list1.SortedFind(3, y);
+  // j)	Search 7
+  list1.SortedSearch(7);
+  // k)	Print out the length of the list
+  cout << "Length of List: " << list1.SortedGetLength() << "\n";
+  // l)	Delete 7
+  list1.SortedDelete(2, y, success);
+  // m)	Print out the list
+  list1.PrintList();
+  // n)	Search 7
+  list1.SortedSearch(7);
 }
 
-bool list::SortedIsEmpty()
-{
+bool list::SortedIsEmpty() {
+  node* temp = new node();
+  temp = head;
 
-    node *temp = new node();
-    temp = head;
+  if (head == NULL) {
+    return false;
+  }
 
-    if (head == NULL)
-    {
-
-        return false;
+  while (temp != NULL) {
+    if (temp == NULL) {
+      return false;
     }
 
-    while (temp != NULL)
-    {
+    temp = temp->next;
+  }
 
-        if (temp == NULL)
-        {
-
-            return false;
-        }
-
-        temp = temp->next;
-    }
-
-    return true;
+  return true;
 }
 
-int list::SortedGetLength()
-{
+int list::SortedGetLength() {
+  int counter = 0;
 
-    int counter = 0;
+  node* temp = new node();
+  temp = head;
 
-    node *temp = new node();
-    temp = head;
+  while (temp != NULL) {
+    counter++;
 
-    while (temp != NULL)
-    {
+    temp = temp->next;
+  }
 
-        counter++;
-
-        temp = temp->next;
-    }
-
-    return counter;
+  return counter;
 }
 
-bool list::SortedFind(int k, int &x)
-{
+bool list::SortedFind(int k, int& x) {
+  node* temp = new node();
+  temp = head;
 
-    node *temp = new node();
-    temp = head;
+  int counter = 1;
 
-    int counter = 1;
+  if (k == 0) {
+    cout << "Invalid Positon for Find Function " << endl;
 
-    if (k == 0)
-    {
+    return false;
+  }
 
-        cout << "Invalid Positon for Find Function " << endl;
+  if (list::SortedGetLength() < k) {
+    cout << "Invalid Positon for Find Function " << endl;
 
-        return false;
-    }
+    return false;
+  }
 
-    if (list::SortedGetLength() < k)
-    {
+  while (counter != k) {
+    temp = temp->next;
+    counter++;
+  }
 
-        cout << "Invalid Positon for Find Function " << endl;
+  x = temp->data;
 
-        return false;
-    }
+  cout << "Value of Element " << k << " is:" << x << "\n";
 
-    while (counter != k)
-    {
-
-        temp = temp->next;
-        counter++;
-    }
-
-    x = temp->data;
-
-    cout << "Value of Element " << k << " is:" << x << "\n";
-
-    return true;
-
+  return true;
 }
 
-int list::SortedSearch(int key)
-{
+int list::SortedSearch(int key) {
+  node* temp = new node();
+  temp = head;
+  int counter = 1;
 
-    node *temp = new node();
-    temp = head;
-    int counter = 1;
+  if (head == NULL) {
+    cout << "List is empty" << endl;
+    return -1;
+  }
 
-    if (head == NULL)
-    {
-
-        cout << "List is empty" << endl;
-        return -1;
+  while (temp != NULL) {
+    if (temp->data == key) {
+      cout << "Element " << key << " is found in position: " << counter << "\n";
+      return 0;
     }
 
-    while (temp != NULL)
-    {
-
-        if (temp->data == key)
-        {
-            cout << "Element " << key << " is found in position: " << counter << "\n";
-            return 0;
-        }
-
-        else if(temp->data > key) {
-            cout << "Doesnt Exist.";
-            return -1;
-        }
-
-        temp = temp->next;
-        counter++;
+    else if (temp->data > key) {
+      cout << "Doesnt Exist.";
+      return -1;
     }
 
-    if (temp == NULL)
-    {
+    temp = temp->next;
+    counter++;
+  }
 
-        cout << key << " is not found in list\n";
+  if (temp == NULL) {
+    cout << key << " is not found in list\n";
 
-        return -1;
-    }
+    return -1;
+  }
 
-    return 0;
+  return 0;
 }
 
-void list::SortedInsert1(int x)
-{ 
-    node *temp;
-    node *s = new node();
-    temp = head;
-    s->data = x; 
+void list::SortedInsert1(int x) {
+  node* temp;
+  node* s = new node();
+  temp = head;
+  s->data = x;
 
-    if (head == NULL){
-        head = s;
-    }
+  if (head == NULL) {
+    head = s;
+  }
 
-    else if(x <= head->data){
+  else if (x <= head->data) {
     s->next = head;
     head = s;
-    return; 
+    return;
+  }
+
+  else {
+    while (temp->next != NULL) {
+      if (temp->next->data >= x) {
+        s->next = temp->next;
+        temp->next = s;
+        break;
+      }
+
+      else {
+        temp = temp->next;
+      }
+    }
+
+    if (temp->next == NULL) {
+      s->next = NULL;
+      temp->next = s;
+    }
+  }
+}
+void list::SortedInsert2(int x) {
+  node* temp;
+  node* s = new node();
+  temp = head;
+  s->data = x;
+
+  if (head == NULL) {
+    head = s;
+  }
+
+  else if (x <= head->data) {
+    s->next = head;
+    head = s;
+    return;
+  }
+
+  else {
+    while (temp->next != NULL) {
+      if (temp->next && temp->next->data == x) {
+        cout << x << " Already in list\n";
+        break;
+      }
+
+      else {
+        temp = temp->next;
+      }
+    }
+
+    if (temp->next == NULL) {
+      s->next = NULL;
+      temp->next = s;
+    }
+  }
+}
+
+void list::SortedDelete(int k, int& x, bool& success) {
+  node* temp = new node();
+  node* s = new node();
+  temp = head;
+
+  int counter = 0;
+
+  if (head == NULL) {
+    success = false;
+
+    cout << "List is empty\n";
+    return;
+  }
+
+  if (k == 1) {
+    success = true;
+
+    head = temp->next;
+  }
+
+  else {
+    while (temp != NULL) {
+      temp = temp->next;
+
+      counter++;
+    }
+
+    if (k > counter || k <= 0) {
+      success = false;
+
+      cout << "Invalid position\n";
     }
 
     else {
+      success = true;
 
+      temp = head;
 
-        while (temp->next != NULL){
+      for (int i = 1; i < k; i++) {
+        s = temp;
 
-            if(temp->next->data >= x) {
-                s->next = temp->next;
-                temp->next = s;
-                break;
-            }
+        temp = temp->next;
+      }
 
-            else{
-            temp = temp->next;
-            }
-        }
-
-        if(temp->next == NULL){
-        s->next = NULL;
-        temp->next = s;
-        }
+      s->next = temp->next;
     }
+  }
 
-}
-void list::SortedInsert2(int x)
-{
-
-    node *temp;
-    node *s = new node();
-    temp = head;
-    s->data = x; 
-
-    if (head == NULL){
-        head = s;
-    }
-
-    else if(x <= head->data){
-    s->next = head;
-    head = s;
-    return; 
-    }
-
-    else {
-
-
-        while (temp->next != NULL){
-
-            if(temp->next && temp->next->data == x) {
-                cout << x << " Already in list\n";
-                break;
-            }
-
-            else{
-            temp = temp->next;
-            }
-        }
-
-        if(temp->next == NULL){
-        s->next = NULL;
-        temp->next = s;
-        }
-    }
-
+  x = temp->data;
+  cout << "Value of deleted element is: " << x << "\n";
+  delete temp;
 }
 
-void list::SortedDelete(int k, int &x, bool &success)
-{
+void list::PrintList() {
+  node* temp = new node();
+  temp = head;
 
-    node *temp = new node();
-    node *s = new node();
-    temp = head;
+  if (head == NULL) {
+    cout << "List is empty\n";
+  }
 
-    int counter = 0;
-
-    if (head == NULL)
-    {
-        success = false;
-
-        cout << "List is empty\n";
-        return;
+  else {
+    while (temp != NULL) {
+      cout << temp->data << "->";
+      temp = temp->next;
     }
 
-    if (k == 1)
-    {
-
-        success = true;
-
-        head = temp->next;
-    }
-
-    else
-    {
-
-        while (temp != NULL)
-        {
-
-            temp = temp->next;
-
-            counter++;
-        }
-
-        if (k > counter || k <= 0)
-        {
-            success = false;
-
-            cout << "Invalid position\n";
-        }
-
-        else
-        {
-            success = true;
-
-            temp = head;
-
-            for (int i = 1; i < k; i++)
-            {
-
-                s = temp;
-
-                temp = temp->next;
-            }
-
-            s->next = temp->next;
-        }
-    }
-
-    x = temp->data;
-    cout << "Value of deleted element is: " << x << "\n";
-    delete temp;
-}
-
-void list::PrintList()
-{
-
-    node *temp = new node();
-    temp = head;
-
-    if (head == NULL)
-    {
-        cout << "List is empty\n";
-    }
-
-    else
-    {
-        while (temp != NULL)
-        {
-            cout << temp->data << "->";
-            temp = temp->next;
-        }
-
-        cout << "NULL";
-        cout << "\n";
-    }
+    cout << "NULL";
+    cout << "\n";
+  }
 }

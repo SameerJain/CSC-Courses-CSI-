@@ -1,25 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int k = 10;
-    int i = 1;
+int main() {
+  int k = 10;
+  int i = 1;
 
-    while (i != 5)
-    {
-        int j = 4;
-        while (j >= i)
-        {
-
-            cout << k << " ";
-            k--;
-            j--;
-        }
-
-        i++;
-        cout << endl;
+  while (i != 5) {
+    int j = 4;
+    while (j >= i) {
+      cout << k << " ";
+      k--;
+      j--;
     }
 
-    return 0;
+    i++;
+    cout << endl;
+  }
+
+  return 0;
 }

@@ -2,34 +2,28 @@
 #include <iostream>
 using namespace std;
 
-int product_sum(int x)
-{
+int product_sum(int x) {
+  int y = 1;
 
-    int y = 1;
+  while (x > 0) {
+    y *= x % 10;
 
-    while (x > 0)
-    {
+    x /= 10;
+  }
 
-        y *= x % 10;
-
-        x /= 10;
-    }
-
-    return y;
+  return y;
 }
 
-int main()
-{
+int main() {
+  int input;
 
-    int input;
+  cout << "Enter a number: ";
 
-    cout << "Enter a number: ";
+  cin >> input;
 
-    cin >> input;
+  cout << "Product of all digits: ";
 
-    cout << "Product of all digits: ";
+  cout << product_sum(input);
 
-    cout << product_sum(input);
-
-    return 0;
+  return 0;
 }

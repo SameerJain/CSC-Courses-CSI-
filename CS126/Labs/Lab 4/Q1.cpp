@@ -2,24 +2,18 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+  int n = 5;
 
-    int n = 5;
+  for (int j = 1; j <= n; j++) {
+    for (int i = 1; i <= j; i++) {
+      cout << "*";
 
-    for (int j = 1; j <= n; j++)
-    {
+    }  // nested for
 
-        for (int i = 1; i <= j; i++)
-        {
+    cout << endl;
 
-            cout << "*";
+  }  // top for
 
-        } // nested for
-
-        cout << endl;
-
-    } // top for
-
-    return 0;
-} // int main
+  return 0;
+}  // int main

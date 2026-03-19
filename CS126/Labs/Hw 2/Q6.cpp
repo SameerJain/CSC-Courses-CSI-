@@ -1,17 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+  float fahrenheit, celsius;
 
-    float fahrenheit, celsius;
+  cout << "This is a F* to C* converter.\nEnter the Degrees in F:\n";
+  cin >> fahrenheit;
 
-    cout << "This is a F* to C* converter.\nEnter the Degrees in F:\n";
-    cin >> fahrenheit;
+  celsius = (fahrenheit - 32) * 5 / 9;
 
-    celsius = (fahrenheit - 32) * 5 / 9;
+  cout << celsius;
 
-    cout << celsius;
-
-    return 0;
+  return 0;
 }

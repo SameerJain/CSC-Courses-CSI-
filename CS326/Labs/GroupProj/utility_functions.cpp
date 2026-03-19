@@ -17,11 +17,10 @@ long long int steps;
 long long int CPUTotal;
 long long int StepTotal;
 
-int *newPermutArray(int n) {
-  int *arr = new int[Size];
+int* newPermutArray(int n) {
+  int* arr = new int[Size];
 
   for (int i = 0; i < n; i++) {
-
     arr[i] = i + 1;
   }
 
@@ -35,14 +34,13 @@ int *newPermutArray(int n) {
 }
 
 void remakeArray(int arr[]) {
-
   for (int i = 0; i < Size; i++) {
     arr[i] = BaseArr[i];
   }
 }
 
-int *newRandArray(int n) {
-  int *arr = new int[Size];
+int* newRandArray(int n) {
+  int* arr = new int[Size];
   for (int i = 0; i < n; i++) {
     arr[i] = rand() % Size;
   }
@@ -67,7 +65,7 @@ void printArray(int arr[], int n) {
 }
 
 void func_eval(int arr[], int n,
-               void (*func)(int[], int)) // Runs function and returns runtime
+               void (*func)(int[], int))  // Runs function and returns runtime
 {
   remakeArray(arr);
   auto start = high_resolution_clock::now();
@@ -79,7 +77,7 @@ void func_eval(int arr[], int n,
 }
 
 void func_eval2(int arr[], int n, int m,
-                void (*func)(int[], int, int)) // for merge and quicksort
+                void (*func)(int[], int, int))  // for merge and quicksort
 {
   remakeArray(arr);
   auto start = high_resolution_clock::now();
@@ -93,7 +91,7 @@ void func_eval2(int arr[], int n, int m,
 void func_evalMergeIns(
     int arr[], int n, int m, int k,
     void (*func)(int[], int, int,
-                 int)) // for merge ins sort, has extra parameter
+                 int))  // for merge ins sort, has extra parameter
 {
   remakeArray(arr);
   auto start = high_resolution_clock::now();
@@ -107,7 +105,7 @@ void func_evalMergeIns(
 void func_evalMergeInsSteps(
     int arr[], int n, int m, int k,
     void (*func)(int[], int, int,
-                 int)) // for merge ins sort, has extra parameter
+                 int))  // for merge ins sort, has extra parameter
 {
   steps = 0;
   remakeArray(arr);
@@ -118,7 +116,7 @@ void func_evalMergeInsSteps(
 
 void func_evalStepsMQ(int arr[], int n, int m,
                       void (*func)(int[], int,
-                                   int)) // stepcounter for merge and quicksort
+                                   int))  // stepcounter for merge and quicksort
 {
   steps = 0;
   remakeArray(arr);

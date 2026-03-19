@@ -2,42 +2,33 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+  int alpha;
+  cin >> alpha;
 
-    int alpha;
-    cin >> alpha;
+  if (alpha == 1 || alpha == 2) {
+    alpha += 2;
+  }
 
-    if (alpha == 1 || alpha == 2)
-    {
-        alpha += 2;
-    }
+  else if (alpha == 4) {
+    alpha++;
+  }
 
-    else if (alpha == 4)
-    {
-        alpha++;
-    }
+  else if (alpha == 5) {
+    alpha *= 3;
+    alpha += 6;
+    alpha--;
+  }
 
-    else if (alpha == 5)
-    {
+  else if (alpha == 6) {
+    alpha += 6;
+    alpha--;
+  }
 
-        alpha *= 3;
-        alpha += 6;
-        alpha--;
-    }
+  else {
+    alpha--;
+  }
 
-    else if (alpha == 6)
-    {
-
-        alpha += 6;
-        alpha--;
-    }
-
-    else
-    {
-        alpha--;
-    }
-
-    cout << alpha;
-    return 0;
+  cout << alpha;
+  return 0;
 }

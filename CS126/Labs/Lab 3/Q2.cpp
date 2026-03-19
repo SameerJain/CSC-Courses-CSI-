@@ -3,18 +3,14 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+  int x = 1;
 
-    int x = 1;
+  do {
+    cout << x << endl;
+    x++;  // adds 1 to x every time its run
 
-    do
-    {
+  } while (x <= 5);
 
-        cout << x << endl;
-        x++; // adds 1 to x every time its run
-
-    } while (x <= 5);
-
-    return 0;
+  return 0;
 }

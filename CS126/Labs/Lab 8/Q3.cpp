@@ -3,16 +3,10 @@
 using namespace std;
 #include <cmath>
 
-double adder(double x, double y)
-{
+double adder(double x, double y) { return pow(x, y) + pow(y, x); }
 
-    return pow(x, y) + pow(y, x);
-}
+int main() {
+  cout << adder(7.5, 3.3);
 
-int main()
-{
-
-    cout << adder(7.5, 3.3);
-
-    return 0;
+  return 0;
 }

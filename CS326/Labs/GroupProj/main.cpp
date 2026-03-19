@@ -1,4 +1,9 @@
-#include "utility_functions.cpp"
+#include <algorithm>
+#include <chrono>
+#include <iomanip>
+#include <iostream>
+#include <vector>
+
 #include "bubble_sort.cpp"
 #include "headers.cpp"
 #include "heap_sort.cpp"
@@ -6,25 +11,20 @@
 #include "merge_sort.cpp"
 #include "quick_sort.cpp"
 #include "selection_sort.cpp"
-#include <algorithm>
-#include <chrono>
-#include <iomanip>
-#include <iostream>
-#include <vector>
+#include "utility_functions.cpp"
 using namespace std;
 using namespace std::chrono;
 
 // Main Function
 int main() {
-
-// TASK 1 OUTPUT
+  // TASK 1 OUTPUT
   cout << "=========TASK 1==============\n";
 
   for (int i = 0; i <= 7; i++) {
     // Initialization and printArray
     Size = dataSetSizes[i];
     cout << "Current Size:" << Size << endl;
-    int *tempArr = newPermutArray(Size);
+    int* tempArr = newPermutArray(Size);
     // cout << "Original Array:\n";
     // printArray(tempArr, Size);
     // // BUBBLE SORT
@@ -96,9 +96,9 @@ int main() {
     delete[] tempArr;
     BaseArr.clear();
   }
-return 0;
-  }
-/*   DEMO   
+  return 0;
+}
+/*   DEMO
 
 
 1.
@@ -200,7 +200,7 @@ Size = dataSetSizes[i];
 3.
 
 
-// PART 2 
+// PART 2
 
   cout << "=========TASK 2==============\n";
   for (int i = 0; i < 8; i++)
@@ -252,7 +252,8 @@ Size = dataSetSizes[i];
       cout << "Time\n";
       func_evalMergeIns(tempArr, 0, Size - 1, Size * 0.01, mergeInsertionSortA);
       cout << "Steps\n";
-      func_evalMergeInsSteps(tempArr, 0, Size - 1, Size * 0.01, mergeInsertionSortAS);
+      func_evalMergeInsSteps(tempArr, 0, Size - 1, Size * 0.01,
+mergeInsertionSortAS);
 
       // QUICKSORT SORT HOARSE
       cout << "=======QUICK SORT HOARSE:============\n";
