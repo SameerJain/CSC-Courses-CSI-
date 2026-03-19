@@ -26,57 +26,45 @@ Pattern 2:
 
 */
 
-/** 
- * 
- * 
- * 
- * 
- * 
- * 
- *     
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  */
-int main()
-{
+int main() {
+  int input;
 
-    int input;
+  cout << "Enter row number: ";
+  cin >> input;
+  cout << "Pattern 1: " << endl;
 
-    cout << "Enter row number: ";
-    cin >> input;
-    cout << "Pattern 1: " << endl;
-
-    for (int i = 0; i <= input; i++)
-    {
-
-        for (int j = 0; j <= i; j++)
-        {
-
-            cout << j << " ";
-        }
-
-        cout << endl;
+  for (int i = 0; i <= input; i++) {
+    for (int j = 0; j <= i; j++) {
+      cout << j << " ";
     }
 
     cout << endl;
+  }
 
-    cout << "Enter row number: ";
-    cin >> input;
-    cout << "Pattern 2: " << endl
-         << endl;
+  cout << endl;
 
-    for (int i = 0; i <= input; i++)
-    {
+  cout << "Enter row number: ";
+  cin >> input;
+  cout << "Pattern 2: " << endl << endl;
 
-        for (int j = input; j > i; j--)
-        {
-
-            cout << " ";
-        }
-
-        for (int k = 0; k <= i; k++)
-        {
-            cout << i << " ";
-        }
-
-        cout << endl;
+  for (int i = 0; i <= input; i++) {
+    for (int j = input; j > i; j--) {
+      cout << " ";
     }
+
+    for (int k = 0; k <= i; k++) {
+      cout << i << " ";
+    }
+
+    cout << endl;
+  }
 }

@@ -1,58 +1,44 @@
 #include <iostream>
 using namespace std;
 
-typedef struct nodeType{
+typedef struct nodeType {
+  int info;
+  nodeType* link;
 
-    int info;
-    nodeType*link;
+} Node;
 
-}Node;
+nodeType* buildlistForward() {
+  nodeType *first, *NewNode, *last;
+  int num;
 
+  cout << "Enter a list of integers ending with -999." << endl;
 
+  cin >> num;
 
-nodeType* buildlistForward(){
+  first = nullptr;
 
-    nodeType *first, *NewNode, *last;
-    int num;
+  while (num != -999) {
+    newNode = new NodeType;
+    newNode->info = num;
+    newNode->link = nullptr;
 
-    cout << "Enter a list of integers ending with -999." << endl;
+    if (first == nullptr) {
+      first = newNode;
+      last = newNode;
+
+    }
+
+    else {
+      last->= newNode;
+      last = newNode;
+    }
 
     cin >> num;
 
-    first = nullptr;
+  }  // end while
 
-    while (num != -999) {
+  return first;
 
-        newNode = new NodeType;
-        newNode->info = num;
-        newNode->link = nullptr;
+}  // end buildlistForward
 
-        if(first == nullptr){
-            first = newNode;
-            last = newNode;
-
-        }
-
-        else {
-
-            last-> = newNode;
-            last = newNode;
-
-        }
-
-        cin >> num;
-
-
-    } // end while
-
-    return first;
-
-} // end buildlistForward
-
-
-int main () {
-
-
-    return 0;
-
-}
+int main() { return 0; }

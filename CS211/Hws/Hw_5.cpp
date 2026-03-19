@@ -1,74 +1,43 @@
 #include <iostream>
 using namespace std;
 
-
-enum day { Sun = 1, Mon, Tue, Wed, Thur, Fri, Sat};
+enum day { Sun = 1, Mon, Tue, Wed, Thur, Fri, Sat };
 
 class dayType {
+  day name;
 
-    day name;
+  string getDay(int d) { return "Tuesday"; }
 
-    string getDay(int d){
+ public:
+  dayType() { name = Mon; }
 
-        return "Tuesday";
+  dayType(day dname) { setDay(dname); }
+
+  string getDay(int d) { return getDay(name); }
+
+  int getDayNumber() { return name; }
+
+  void setDay(day dname) { name = dname; }
+
+  void print() { cout << getDay(name); }
+
+  string nextDay() {
+    int next = name + 1;
+    if (next > 7) {
+      next = 1;
     }
 
-    public:
+    return getDay(next);
+  }
 
-    dayType(){
-
-        name = Mon;
-
+  string previousDay() {
+    int prev = name - 1;
+    if (prev < 1) {
+      prev = 7;
     }
 
-    dayType(day dname){
-
-        setDay(dname);
-
-    }
-
-    string getDay(int d){
-
-        return getDay(name);
-    }
-
-    int getDayNumber(){
-        return name;
-    }
-
-    void setDay(day dname){
-        name = dname;
-    }
-
-    void print(){
-        cout << getDay(name);
-    }
-
-    string nextDay(){
-        int next = name + 1;
-        if(next>7){
-            next = 1;
-
-        }
-
-        return getDay(next);
-
-    }
-
-    string previousDay(){
-        int prev = name -1;
-        if(prev < 1){
-            prev = 7;
-        }
-
-        return getDay(prev);
-    }
-
+    return getDay(prev);
+  }
 };
 
-int main () {
-
-
-    return 0;
-
-}
+int main() { return 0; }

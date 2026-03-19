@@ -1,37 +1,36 @@
 #include <iostream>
-#include "stackImp.h"
 #include <stack>
+
+#include "stackImp.h"
 using namespace std;
 
-int main () {
+int main() {
+  stack<int> stack;
+  int temp;
+  stack.push(28);
+  stack(16);
 
-stack<int> stack;
-int temp;
-stack.push(28);
-stack(16);
+  temp = stack.top();
 
-temp = stack.top();
+  stack.push(temp - 3);
+  cout << stack.top() << endl;
 
-stack.push(temp - 3);
-cout << stack.top() << endl;
+  stack.push(2 * temp);
+  stack.push(50);
 
-stack.push(2* temp);
-stack.push(50);
+  temp = stack.top();
 
-temp = stack.top();
+  stack.pop();
+  stack.push(32);
 
-stack.pop();
-stack.push(32);
-
-while(!stack.isEmptyStack()){
+  while (!stack.isEmptyStack()) {
     cout << stack.top() << " ";
     stack.pop();
-}
+  }
 
-cout << endl;
+  cout << endl;
 
-cout << "temp = " << temp << endl;
+  cout << "temp = " << temp << endl;
 
-
-    return 0;
+  return 0;
 }

@@ -1,83 +1,62 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
-enum triangletype{scalene,isosceles, equilateral, noTriangle};
+enum triangletype { scalene, isosceles, equilateral, noTriangle };
 
-void triangleshape(double x,double y,double z){
+void triangleshape(double x, double y, double z) {
+  triangletype trianglecheck;
 
+  if (x + y < x || y + z < x || z + x < y) {
+    trianglecheck = noTriangle;
+  }
 
+  else if (x == y && y == z && z == x) {
+    trianglecheck = equilateral;
 
-triangletype trianglecheck;
+  }
 
-if ( x + y  < x || y + z < x || z + x < y) {
-
-trianglecheck = noTriangle;
-}
-
-
-else if (x == y && y ==z && z ==x )
-{
-
-trianglecheck = equilateral;
-
-}
-
-
-
-else if( x == y && x != z || y == z && y != x || z == x && x != y ) {
-    
+  else if (x == y && x != z || y == z && y != x || z == x && x != y) {
     trianglecheck = isosceles;
 
-}
+  }
 
-else { trianglecheck = scalene;}
+  else {
+    trianglecheck = scalene;
+  }
 
-switch( trianglecheck ){
-
+  switch (trianglecheck) {
     case noTriangle:
-    cout << "No triangle";
-    break;
+      cout << "No triangle";
+      break;
 
     case equilateral:
-    cout << "Equilateral";
-    break;
+      cout << "Equilateral";
+      break;
 
     case isosceles:
-    cout << "Isosceles";
-    break;
+      cout << "Isosceles";
+      break;
 
     case scalene:
-    cout << "Scalene";
-    break;
+      cout << "Scalene";
+      break;
+  }
 
-
+  cout << endl;
 }
 
-cout << endl;
+int main() {
+  double x, y, z;
+  int counter = 0;
 
+  while (counter < 5) {
+    cout << "Enter 3 angles: " << endl;
 
-}
+    cin >> x >> y >> z;
 
+    triangleshape(x, y, z);
+  }
 
-int main()
-{
-
-
-double x,y,z;
-int counter = 0;
-
-while( counter < 5) {
-cout << "Enter 3 angles: "<< endl;
-
-cin >> x >> y >> z;
-
-triangleshape(x,y,z);
-}
-
-
-
-    return 0;
-
-
+  return 0;
 }
